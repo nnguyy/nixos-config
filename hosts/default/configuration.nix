@@ -118,6 +118,7 @@
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     vim 
+    git
     wget
     sl
     waybar
