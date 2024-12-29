@@ -22,7 +22,7 @@
 
   # Nerd Fonts
   fonts.packages = with pkgs; [
-    terminus-nerdfont
+    nerd-font.terminess-ttf
   ];
 
   # Enable networking
