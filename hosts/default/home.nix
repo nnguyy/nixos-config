@@ -30,6 +30,7 @@
     neofetch
 
     wofi
+    wl-clipboard
     alacritty
     swww
     dunst
