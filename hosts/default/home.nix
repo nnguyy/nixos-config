@@ -100,9 +100,16 @@
       drawbox = true;
       icons = true;
       ignorecase = true;
-      previewer = "${pkgs.ctpv}/bin/ctpv";
-      cleaner = "${pkgs.ctpv}/bin/ctpvclear";
     };
+    previewer = {
+      keybinding = "i";
+      source = "${pkgs.ctpv}/bin/ctpv";
+    };
+    extraConfig = ''
+      &${pkgs.ctpv}/bin/ctpv -s $id
+      cmd on-quit %${pkgs.ctpv}/bin/ctpv -e $id
+      set cleaner ${pkgs.ctpv}/bin/ctpvclear
+    '';
   };
 
   # git config
