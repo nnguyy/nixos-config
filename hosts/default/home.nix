@@ -51,13 +51,12 @@
 
   # git config
   programs.git = {
-    # enable = true;
+    enable = true;
     userName = "nnguyy";
     userEmail = "nnoahnguyenn@gmail.com";
   };
 
   # neovim config
-
   programs.neovim = {
     enable = true;
 
