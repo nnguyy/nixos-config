@@ -21,7 +21,9 @@
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
   # Nerd Fonts
-  fonts.packages = with pkgs; [ nerdfonts ];
+  fonts.packages = with pkgs; [
+    nerd-fonts.terminus
+  ];
 
   # Enable networking
   networking.networkmanager.enable = true;
