@@ -55,7 +55,7 @@
     enable = true;
     font = {
       name = "Terminus Nerd Font";
-      size = "12";
+      size = 12;
     };
   };
 
