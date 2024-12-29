@@ -55,7 +55,7 @@
     enable = true;
     font = {
       name = "Terminess Nerd Font";
-      size = 15;
+      size = 14;
     };
   };
 
