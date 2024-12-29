@@ -54,7 +54,7 @@
   programs.kitty = {
     enable = true;
     font = {
-      name = "Terminus Nerd Font";
+      name = "Terminess Nerd Font";
       size = 12;
     };
   };
