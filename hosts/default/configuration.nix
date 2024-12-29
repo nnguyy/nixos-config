@@ -22,7 +22,7 @@
 
   # Nerd Fonts
   fonts.packages = with pkgs; [
-    nerd-fonts.terminus
+    nerd-fonts.Terminus
   ];
 
   # Enable networking
