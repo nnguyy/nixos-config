@@ -1,6 +1,6 @@
 .PHONY: update
 update:
-	sudo nixos-rebuid switch --flake ~/nixos-config/#default
+	sudo nixos-rebuild switch --flake ~/nixos-config/#default
 
 .PHONY: clean
 clean:
