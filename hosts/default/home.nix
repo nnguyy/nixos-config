@@ -32,7 +32,6 @@
 
     wofi
     wl-clipboard
-    kitty
     swww
     dunst
     inputs.hyprland-qtutils.packages."${pkgs.system}".default
@@ -50,6 +49,14 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  # kitty config
+  programs.kitty = {
+    enable = true;
+    font = {
+      name = "Terminus Nerd Font";
+      size = "12"
+  };
 
   # lf config
   programs.lf = {
