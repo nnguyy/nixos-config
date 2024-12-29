@@ -56,6 +56,7 @@
     font = {
       name = "Terminus Nerd Font";
       size = "12";
+    };
   };
 
   # lf config
