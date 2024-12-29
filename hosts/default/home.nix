@@ -32,7 +32,7 @@
 
     wofi
     wl-clipboard
-    alacritty
+    kitty
     swww
     dunst
     inputs.hyprland-qtutils.packages."${pkgs.system}".default
@@ -50,6 +50,50 @@
     #   echo "Hello, ${config.home.username}!"
     # '')
   ];
+
+  # lf config
+  programs.lf = {
+    enable = true;
+
+    commands = {
+      dragon-out = ''%${pkgs.xdragon}/bin/xdragon -a -x "$fx"'';
+      editor-open = ''$$EDITOR $f'';
+      mkdir = ''
+      ''${{
+        printf "Directory Name: "
+        read DIR
+        mkdir $DIR
+      }}
+      '';
+    };
+
+    keybindings = {
+      "\\\"" = "";
+      o = "";
+      c = "mkdir";
+      "." = "set hidden!";
+      "`" = "mark-load";
+      "\\'" = "mark-load";
+      "<enter>" = "open";
+
+      do = "dragon-out";
+
+      "g~" = "cd";
+      gh = "cd";
+      "g/" = "/";
+
+      ee = "editor-open";
+      V = ''''$${pkgs.bat}/bin/bat --paging=always --theme=gruvbox "$f"'';
+    };
+
+    settings = {
+      preview = true;
+      hidden = true;
+      drawbox = true;
+      icons = true;
+      ignorecase = true;
+    };
+  };
 
   # git config
   programs.git = {
@@ -101,11 +145,8 @@
   home.file = {
     ".config/hypr/hyprland.conf".source = ../../modules/home-manager/hyprland/hyprland.conf;
     ".config/waybar/config.jsonc".source = ../../modules/home-manager/waybar/config.jsonc;
-    # ".config/nvim/init.lua".source = ../../modules/home-manager/nvim/init.lua;
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
+    ".config/alacritty/alacritty.toml".source = ../../modules/home-manager/alacritty/alcritty.toml;
+    ".config/lf/icons".source = ../../modules/home-manager/lf/icons;
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
