@@ -205,7 +205,7 @@
   #  /etc/profiles/per-user/nnguy/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    # EDITOR = "emacs";
+    EDITOR = "nvim";
     SHELL = "${pkgs.zsh}/bin/zsh";
   };
 
