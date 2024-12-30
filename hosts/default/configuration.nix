@@ -62,10 +62,6 @@
     XCURSOR_THEME = "Bibata-Modern-Classic";
     XCURSOR_SIZE = "24";
   };
-  gtk.cursorTheme = {
-    name = "Bibata-Modern-Classic";
-    size = 24;
-  };
 
   # Enable hyprland
   programs.hyprland = {
