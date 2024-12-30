@@ -20,6 +20,8 @@
   # networking.proxy.default = "http://user:password@proxy:port/";
   # networking.proxy.noProxy = "127.0.0.1,localhost,internal.domain";
 
+
+
   # Nerd Fonts
   fonts.packages = with pkgs; [
     nerd-fonts.terminess-ttf
@@ -55,6 +57,12 @@
         user = "nnguy";
       };
     };
+  };
+
+  # Cursor 
+  environment.variables = {
+    XCURSOR_THEME = "Bibata-Modern-Classic";
+    XCURSOR_SIZE = "24";
   };
 
   # Enable hyprland
