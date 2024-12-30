@@ -10,8 +10,6 @@
     };
 
     hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
-
-    rose-pine-hyprcursor.url = "github:ndom91/rose-pine-hyprcursor";
   };
 
   outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs: {
