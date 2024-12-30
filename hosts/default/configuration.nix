@@ -127,7 +127,8 @@
     wget
     sl
     waybar
-    inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
+    bibata-cursors
+    # inputs.rose-pine-hyprcursor.packages.${pkgs.system}.default
   ];
 
   home-manager = {
