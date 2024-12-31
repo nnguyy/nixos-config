@@ -22,9 +22,13 @@
     nixosConfigurations = builtins.listToAttrs (map (config: {
       name = config.hostName;
       value = nixpkgs.lib.nixosSystem {
-        specialArgs = { inherit inputs config.userName config.hostName; };
+        specialArgs = {
+          inherit inputs;
+          userName = config.userName;
+          hostName = config.hostName;
+        };
         modules = [
-          ./hosts/${config.hostName}/configuration.nix
+          ./hosts/${hostName}/configuration.nix
           inputs.home-manager.nixosModules.default
         ];
       };
