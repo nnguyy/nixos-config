@@ -8,9 +8,10 @@ This repository contains my NixOS system configuration and Home Manager user con
 ![tree](https://github.com/user-attachments/assets/9f8c8a52-ada5-44ef-bd72-3eba3772ece7)
 
 ## Setup Instructions
-1. Boot a NixOS Live ISO
+1. Boot a [NixOS Live ISO]([url](https://nixos.org/download/))
 2. Follow [NixOS Installation Guide]([url](https://nixos.org/manual/nixos/stable/index.html))
 3. Clone this Repo
-    git clone https://github.com/nnguyy/nixos-config.git
-4. Edit flake.nix to set machine-specific values
-5. Copy 
+   - git clone https://github.com/nnguyy/nixos-config.git
+5. Edit flake.nix to set machine-specific values
+   - change userName and hostName
+7. 
