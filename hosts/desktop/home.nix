@@ -25,6 +25,7 @@
     neofetch
 
     wofi
+    flameshot
     wl-clipboard
     swww
     dunst
