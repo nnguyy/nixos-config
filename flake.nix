@@ -11,37 +11,40 @@
   };
 
   outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs: {
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/default/configuration.nix
-        inputs.home-manager.nixosModules.default
-      ];
-      specialArgs = { 
+    let
         userName = "default"; 
         hostName = "default";
+    in {
+      nixosConfigurations.${hostName} = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs userName hostName; };
+        modules = [
+          ./hosts/${hostName}/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
       };
     };
-    nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/desktop/configuration.nix
-        inputs.home-manager.nixosModules.default
-      ];
-      specialArgs = { 
+    let
         userName = "nnguy"; 
         hostName = "desktop";
+    in {
+      nixosConfigurations.${hostName} = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs userName hostName; };
+        modules = [
+          ./hosts/${hostName}/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
       };
     };
-    nixosConfigurations.laptop = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
-      modules = [
-        ./hosts/laptop/configuration.nix
-        inputs.home-manager.nixosModules.default
-      ];
-      specialArgs = { 
+    let
         userName = "nnguy"; 
         hostName = "laptop";
+    in {
+      nixosConfigurations.${hostName} = nixpkgs.lib.nixosSystem {
+        specialArgs = { inherit inputs userName hostName; };
+        modules = [
+          ./hosts/${hostName}/configuration.nix
+          inputs.home-manager.nixosModules.default
+        ];
       };
     };
   };
