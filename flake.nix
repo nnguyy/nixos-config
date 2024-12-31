@@ -11,7 +11,7 @@
   };
 
   outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs: {
-    nixosConfigurations.${hostName} = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/default/configuration.nix
@@ -22,7 +22,7 @@
         hostName = "default";
       };
     };
-    nixosConfigurations.${hostName} = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.desktop = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
         ./hosts/desktop/configuration.nix
