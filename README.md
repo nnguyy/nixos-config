@@ -15,9 +15,11 @@ This repository contains my NixOS system configuration and Home Manager user con
 4. Clone this Repo
    - git clone https://github.com/nnguyy/nixos-config.git
 5. Edit flake.nix to set machine-specific values
-   - change userName and hostName
-7. Edit makefile
+   - change userName in host default
+6. Copy hardware configuration to nixos-config/hosts/default
+   - 
+8. Edit makefile
    - change FLAKE_PATH to path of nixos-config
    - select default target
-8. Run make command in terminal
+9. Run make command
    - runs sudo nixos-rebuild switch --flake ${FLAKE_PATH}#host
