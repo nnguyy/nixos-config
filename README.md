@@ -1,21 +1,8 @@
 ## NixOS Configuration
 This repository contains my NixOS system configuration and Home Manager user configuration
 
-## Repository Structure
-nixos                  
-├── hosts                  
-│   ├── default                  
-│   └── laptop                  
-└── modules     
-    ├── home-manager                  
-    │   ├── files                  
-    │   │   ├── hyprland                  
-    │   │   ├── lf                  
-    │   │   ├── nvim                  
-    │   │   └── waybar                  
-    │   └── nix-files                  
-    ├── nixos                  
-    └── wallpapers                  
+## Repository Structure          
+![tree](https://github.com/user-attachments/assets/9f8c8a52-ada5-44ef-bd72-3eba3772ece7)
 
 ## Setup Instructions
 1. Boot a NixOS Live ISO
