@@ -1,6 +1,7 @@
 FLAKE_PATH = ~/nixos-config
 
-# default target
+# default target 
+# TODO: CHANGE THIS TO DEFAULT/ETC
 all: desktop
 
 default:
