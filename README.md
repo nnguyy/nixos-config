@@ -18,5 +18,6 @@ This repository contains my NixOS system configuration and Home Manager user con
    - change userName and hostName
 7. Edit makefile
    - change FLAKE_PATH to path of nixos-config
-   - select machine host
+   - select default target
 8. Run make command in terminal
+   - runs sudo nixos-rebuild switch --flake ${FLAKE_PATH}#host
