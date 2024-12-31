@@ -5,7 +5,7 @@
     enable = true;
 
     extraLuaConfig = ''
-      ${builtins.readFile ../../../modules/home-manager/files/nvim/options.lua}
+      ${builtins.readFile ../files/nvim/options.lua}
     '';
 
     plugins = with pkgs.vimPlugins; [
