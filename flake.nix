@@ -28,7 +28,7 @@
           hostName = config.hostName;
         };
         modules = [
-          ./hosts/${hostName}/configuration.nix
+          ./hosts/${config.hostName}/configuration.nix
           inputs.home-manager.nixosModules.default
         ];
       };
