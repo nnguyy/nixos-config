@@ -25,7 +25,6 @@
     neofetch
 
     wofi
-    warpd
     grim
     wl-clipboard
     swww
