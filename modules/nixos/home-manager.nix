@@ -1,10 +1,10 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, userName, hostName, ... }:
 
 {
   home-manager = {
     extraSpecialArgs = { inherit inputs; };
     users = {
-      "nnguy" = import ../../hosts/default/home.nix;
+      "${userName}" = import ../../hosts/${hostName}/home.nix;
     };
   };
 }

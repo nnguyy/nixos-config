@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, userName, ... }:
 
 {
   # Display Manager
@@ -7,7 +7,7 @@
     settings = {
       default_session = {
         command = "${pkgs.greetd.tuigreet}/bin/tuigreet";
-        user = "nnguy";
+        user = "${userName}";
       };
     };
   };

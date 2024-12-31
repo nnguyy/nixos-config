@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, userName, ... }:
 
 {
   # Bootloader
@@ -23,9 +23,8 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # User
-  users.users.nnguy = {
+  users.users.${userName} = {
     isNormalUser = true;
-    description = "noah nguyen";
     extraGroups = [ "networkmanager" "wheel" ];
     shell = pkgs.zsh;
     packages = with pkgs; [ ];
