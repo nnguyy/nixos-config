@@ -13,7 +13,6 @@
   outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs:
 
   #TODO: change default userName to system user
-
   let
     # Define configurations for each system
     systems = {

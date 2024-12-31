@@ -1,7 +1,8 @@
+# TODO:	change this location if not in ~ dir
 FLAKE_PATH = ~/nixos-config
 
 # default target 
-# TODO: CHANGE THIS TO DEFAULT/ETC
+# TODO: change this to default
 all: desktop
 
 default:
