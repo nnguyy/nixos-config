@@ -7,7 +7,7 @@ This repository contains my NixOS system configuration and Home Manager user con
 ## Repository Structure          
 ![tree](https://github.com/user-attachments/assets/9f8c8a52-ada5-44ef-bd72-3eba3772ece7)
 
-## Setup Instructions (WORK IN PROGRESS!)
+## Setup Instructions
 1. Boot a NixOS Live ISO
    - https://nixos.org/download/
 3. Follow NixOS Installation Guide
