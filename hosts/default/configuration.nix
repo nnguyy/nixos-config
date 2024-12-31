@@ -1,5 +1,3 @@
- # configuration.nix
-
 { config, pkgs, inputs, ... }:
 
 {
