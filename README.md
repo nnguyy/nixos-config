@@ -6,7 +6,7 @@ nixos
 ├── hosts                  
 │   ├── default                  
 │   └── laptop                  
-└── modules                  
+└── modules     
     ├── home-manager                  
     │   ├── files                  
     │   │   ├── hyprland                  
