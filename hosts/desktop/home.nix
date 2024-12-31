@@ -26,6 +26,7 @@
 
     wofi
     grim
+    ripgrep
     wl-clipboard
     swww
     dunst
