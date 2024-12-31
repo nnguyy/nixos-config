@@ -9,6 +9,7 @@
       ../../modules/nixos/locales.nix
       ../../modules/nixos/desktop.nix
       ../../modules/nixos/services.nix
+      ../../modules/nixos/steam.nix
       ../../modules/nixos/home-manager.nix
       inputs.home-manager.nixosModules.default
     ];
