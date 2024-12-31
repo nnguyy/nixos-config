@@ -1,7 +1,8 @@
-![showcase](https://github.com/user-attachments/assets/7bbbd8a3-ffa8-4c40-b2d5-472c851dfaf4)
-
-## NixOS Configuration
+# NixOS Configuration
 This repository contains my NixOS system configuration and Home Manager user configuration
+
+## Preview
+![showcase](https://github.com/user-attachments/assets/7bbbd8a3-ffa8-4c40-b2d5-472c851dfaf4)
 
 ## Repository Structure          
 ![tree](https://github.com/user-attachments/assets/9f8c8a52-ada5-44ef-bd72-3eba3772ece7)
