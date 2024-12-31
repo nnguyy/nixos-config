@@ -1,8 +1,8 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, userName, ... }:
 
 {
-  home.username = "nnguy";
-  home.homeDirectory = "/home/nnguy";
+  home.username = "${userName}";
+  home.homeDirectory = "/home/${userName}";
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   imports = [
