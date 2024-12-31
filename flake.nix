@@ -11,27 +11,36 @@
   };
 
   outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs:
+
+  #TODO: change default userName to system user
+
   let
-    configurations = [
-      { userName = "default"; hostName = "default"; }
-      { userName = "nnguy"; hostName = "desktop"; }
-      { userName = "nnguy"; hostName = "laptop"; }
-    ];
+    # Define configurations for each system
+    systems = {
+      default = { userName = "default"; hostName = "default"; };
+      desktop = { userName = "nnguy"; hostName = "desktop"; };
+      laptop = { userName = "nnguy"; hostName = "laptop"; };
+    };
+
+    # Function to create a nixosSystem configuration
+    mkSystem = name: config: nixpkgs.lib.nixosSystem {
+      specialArgs = { 
+        inherit inputs; 
+        userName = config.userName; 
+        hostName = config.hostName; 
+      };
+      modules = [
+        ./hosts/${name}/configuration.nix
+        inputs.home-manager.nixosModules.default
+      ];
+    };
   in
   {
-    nixosConfigurations = builtins.listToAttrs (map (config: {
-      name = config.hostName;
-      value = nixpkgs.lib.nixosSystem {
-        specialArgs = {
-          inherit inputs;
-          userName = config.userName;
-          hostName = config.hostName;
-        };
-        modules = [
-          ./hosts/${config.hostName}/configuration.nix
-          inputs.home-manager.nixosModules.default
-        ];
-      };
-    }) configurations);
+    nixosConfigurations = {
+      # Create configurations for each system
+      default = mkSystem "default" systems.default;
+      desktop = mkSystem "desktop" systems.desktop;
+      laptop = mkSystem "laptop" systems.laptop;
+    };
   };
 }
