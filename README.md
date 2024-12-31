@@ -2,8 +2,8 @@
 This repository contains my NixOS system configuration and Home Manager user configuration
 
 ## Repository Structure
-nixos \n
-├── hosts
+nixos                  
+├── hosts                  
 │   ├── default                  
 │   └── laptop                  
 └── modules                  
