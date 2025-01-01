@@ -12,6 +12,7 @@
     ../../modules/home-manager/nix-files/neovim.nix
     ../../modules/home-manager/nix-files/zsh.nix
     ../../modules/home-manager/nix-files/rofi.nix
+    ../../modules/home-manager/swaync/swaync.nix
   ];
 
   home.packages = with pkgs; [
