@@ -11,7 +11,6 @@
     ../../modules/home-manager/nix-files/lf.nix
     ../../modules/home-manager/nix-files/neovim.nix
     ../../modules/home-manager/nix-files/zsh.nix
-    ../../modules/home-manager/nix-files/rofi.nix
   ];
 
   home.packages = with pkgs; [
