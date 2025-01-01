@@ -46,7 +46,7 @@
 
     window {
       height: 600px;
-      width: 900px;
+      width: 300px;
       border: 2px;
       border-color: @border-col;
       background-color: @bg-col;
