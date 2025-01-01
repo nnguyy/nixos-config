@@ -46,7 +46,7 @@
 
     window {
       height: 600px;
-      width: 300px;
+      width: 400;
       border: 2px;
       border-color: @border-col;
       background-color: @bg-col;
@@ -88,7 +88,7 @@
       border: 0px 0px 0px;
       padding: 6px 0px 0px;
       margin: 10px 0px 0px 6px;
-      columns: 3;
+      columns: 1;
       background-color: @bg-col;
       cycle: true;
     }
