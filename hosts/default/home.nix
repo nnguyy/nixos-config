@@ -27,7 +27,6 @@
     wofi
     wl-clipboard
     swww
-    dunst
     inputs.hyprland-qtutils.packages."${pkgs.system}".default
   ];
 
