@@ -6,14 +6,9 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   imports = [
-    ../../modules/home-manager/nix-files/git.nix
-    ../../modules/home-manager/nix-files/kitty.nix
-    ../../modules/home-manager/nix-files/lf.nix
-    ../../modules/home-manager/nix-files/neovim.nix
-    ../../modules/home-manager/nix-files/zsh.nix
-    ../../modules/home-manager/nix-files/rofi.nix
+    ../../modules/home-manager
     ../../modules/home-manager/swaync/swaync.nix
-    ../../modules/home-manager/btop.nix
+    ../../modules/home-manager/lf/lf.nix
   ];
 
   home.packages = with pkgs; [
@@ -39,9 +34,9 @@
   nixpkgs.config.allowUnfree = true;
 
   home.file = {
-    ".config/hypr/hyprland.conf".source = ../../modules/home-manager/files/hyprland/hyprland.conf;
-    ".config/waybar/config.jsonc".source = ../../modules/home-manager/files/waybar/config.jsonc;
-    ".config/lf/icons".source = ../../modules/home-manager/files/lf/icons;
+    ".config/hypr/hyprland.conf".source = ../../modules/home-manager/hyprland/hyprland.conf;
+    ".config/waybar/config.jsonc".source = ../../modules/home-manager/waybar/config.jsonc;
+    ".config/lf/icons".source = ../../modules/home-manager/lf/icons;
   };
 
   home.sessionVariables = {
