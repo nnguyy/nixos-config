@@ -7,6 +7,8 @@
       name = "Terminess Nerd Font";
       size = 14;
     };
-    cursor_trail = 3;
+    extraConfig = "
+    cursor_trail 3  
+    ";
   };
 }
