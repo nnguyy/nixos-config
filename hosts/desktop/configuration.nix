@@ -8,6 +8,8 @@
       inputs.home-manager.nixosModules.default
     ];
 
+  home-manager.users.${userName} = import ./home.nix;
+
   environment.systemPackages = with pkgs; [
     vim 
     git
