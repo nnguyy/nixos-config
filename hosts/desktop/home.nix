@@ -6,7 +6,7 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   imports = [
-    ../../modules/
+    ../../modules/home
   ];
 
   home.packages = with pkgs; [
