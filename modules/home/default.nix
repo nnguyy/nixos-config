@@ -1,4 +1,4 @@
-{ inputs, userName, hostName, ... }: 
+{ inputs, userName, ... }: 
 
 {
   imports = [
@@ -9,6 +9,5 @@
     ./zsh.nix
     ./neovim/neovim.nix
     ./lf/lf.nix
-    ${hostName}
   ];
 }
