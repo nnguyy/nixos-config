@@ -7,7 +7,7 @@
       mainbar = {
         layer = "top";
         position = "top";
-        modules-left = [ "hyprland/workspaces" "hyprland/mode" ];
+        modules-left = [ "hyprland/workspaces" "hyprland/submap" ];
         modules-center = [ "hyprland/window" ];
         modules-right = [ "battery" "clock" ];
 
