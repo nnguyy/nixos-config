@@ -4,13 +4,7 @@
   imports =
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
-      ../../modules/nixos/system.nix
-      ../../modules/nixos/networking.nix
-      ../../modules/nixos/locales.nix
-      ../../modules/nixos/desktop.nix
-      ../../modules/nixos/services.nix
-      ../../modules/nixos/steam.nix
-      ../../modules/nixos/home-manager.nix
+      ../../modules/nixos
       inputs.home-manager.nixosModules.default
     ];
 
