@@ -9,5 +9,6 @@
     ./zsh.nix
     ./neovim/neovim.nix
     ./lf/lf.nix
+    ./waybar.nix
   ];
 }

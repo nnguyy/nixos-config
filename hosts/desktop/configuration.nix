@@ -12,7 +12,6 @@
     vim 
     git
     wget
-    waybar
     bibata-cursors
   ];
 
