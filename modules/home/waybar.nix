@@ -7,15 +7,9 @@
       mainbar = {
         layer = "top";
         position = "top";
-        modules-left = [ "hyprland/workspaces" "hyprland/submap" ];
+        modules-left = [ "hyprland/workspaces" ]; 
         modules-center = [ "hyprland/window" ];
         modules-right = [ "battery" "clock" ];
-
-
-        "hyprland/submap" = {
-          format = "{}";
-          max-length = 8;
-        };
 
         "battery" = {
           format = "{capacity} %";
