@@ -33,7 +33,6 @@
 
   home.file = {
     ".config/hypr/hyprland.conf".source = ../../modules/home/hyprland/hyprland.conf;
-    ".config/waybar/config.jsonc".source = ../../modules/home/waybar/config.jsonc;
     ".config/lf/icons".source = ../../modules/home/lf/icons;
   };
 
