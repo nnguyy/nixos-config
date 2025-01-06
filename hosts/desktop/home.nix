@@ -7,9 +7,6 @@
 
   imports = [
     ../../modules/home-manager
-    ../../modules/home-manager/swaync/swaync.nix
-    ../../modules/home-manager/lf/lf.nix
-    ../../modules/home-manager/neovim/neovim.nix
   ];
 
   home.packages = with pkgs; [
