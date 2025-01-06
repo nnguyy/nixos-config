@@ -1,7 +1,7 @@
-{ config, pkgs, inputs, userName, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
-  home.username = "${userName}";
+  home.username = "nnguy";
   home.homeDirectory = "/home/nnguy";
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
