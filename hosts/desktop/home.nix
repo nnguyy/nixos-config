@@ -6,7 +6,7 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   imports = [
-    ../../modules/home-manager
+    ../../modules/
   ];
 
   home.packages = with pkgs; [
@@ -32,9 +32,9 @@
   nixpkgs.config.allowUnfree = true;
 
   home.file = {
-    ".config/hypr/hyprland.conf".source = ../../modules/home-manager/hyprland/hyprland.conf;
-    ".config/waybar/config.jsonc".source = ../../modules/home-manager/waybar/config.jsonc;
-    ".config/lf/icons".source = ../../modules/home-manager/lf/icons;
+    ".config/hypr/hyprland.conf".source = ../../modules/home/hyprland/hyprland.conf;
+    ".config/waybar/config.jsonc".source = ../../modules/home/waybar/config.jsonc;
+    ".config/lf/icons".source = ../../modules/home/lf/icons;
   };
 
   home.sessionVariables = {
