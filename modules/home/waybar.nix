@@ -11,6 +11,12 @@
         modules-center = [ "hyprland/window" ];
         modules-right = [ "battery" "clock" ];
 
+
+        "hyprland/submap" = {
+          format = "{}";
+          max-length = 8;
+        };
+
         "battery" = {
           format = "{capacity} %";
         };
