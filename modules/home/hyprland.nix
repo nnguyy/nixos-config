@@ -163,7 +163,7 @@
 
       windowrule = [
         "opacity 0.9 0.8, ^(kitty)$"
-        "opacity 0.9 0.8, ^(Discord)$"
+        "opacity 0.9 0.8, title:(Discord)(.*)"
       ];
 
       windowrulev2 = [
