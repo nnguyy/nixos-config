@@ -163,6 +163,7 @@
 
       windowrule = [
         "opacity 0.9 0.8, ^(kitty)$"
+        "opacity 0.9 0.8, ^(Vencord)$"
       ];
 
       windowrulev2 = [
