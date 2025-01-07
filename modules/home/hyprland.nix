@@ -123,7 +123,7 @@
         "ALT,l,resizeactive,50 0"
         "ALT,i,resizeactive,0 -50"
         "ALT,k,resizeactive,0 50"
-        "$mainMod,1,workspace,10"
+        "$mainMod,1,workspace,1"
         "$mainMod,2,workspace,2"
         "$mainMod,3,workspace,3"
         "$mainMod,4,workspace,4"
