@@ -32,7 +32,7 @@
   nixpkgs.config.allowUnfree = true;
 
   home.file = {
-    ".config/hypr/hyprland.conf".source = ../../modules/home/hyprland/hyprland.conf;
+    #".config/hypr/hyprland.conf".source = ../../modules/home/hyprland/hyprland.conf;
     ".config/lf/icons".source = ../../modules/home/lf/icons;
   };
 
