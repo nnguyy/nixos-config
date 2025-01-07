@@ -1,130 +1,130 @@
 { pkgs, ... }:
+
 {
-  home.packages = (with pkgs; [ rofi-wayland ]);
+  home.packages = with pkgs; [ rofi-wayland ];
 
   xdg.configFile."rofi/theme.rasi".text = ''
     * {
-      bg-col: #1D2021;
-      bg-col-light: #282828;
-      border-col: #A89984;
-      selected-col: #3C3836;
-      green: #98971A;
-      fg-col: #FBF1C7;
-      fg-col2: #EBDBB2;
-      grey: #BDAE93;
-      highlight: @green;
-    }
-  '';
-
-  xdg.configFile."rofi/config.rasi".text = ''
-    configuration{
-      modi: "run,drun,window";
-      lines: 5;
-      cycle: false;
-      font: "JetBrainsMono NF Bold 15";
-      show-icons: true;
-      icon-theme: "Papirus-dark";
-      terminal: "kitty";
-      drun-display-format: "{icon} {name}";
-      location: 0;
-      disable-history: true;
-      hide-scrollbar: true;
-      display-drun: " Apps ";
-      display-run: " Run ";
-      display-window: " Window ";
-      /* display-Network: " Network"; */
-      sidebar-mode: true;
-      sorting-method: "fzf";
+        background:     #000000BF;
+        background-alt: #121212FF;
+        foreground:     #FFFFFFFF;
+        selected:       #DD9998FF;
+        active:         #5D8787FF;
+        urgent:         #444444FF;
     }
 
-    @theme "theme"
-
-    element-text, element-icon , mode-switcher {
-      background-color: inherit;
-      text-color:       inherit;
+    /*****----- Configuration -----*****/
+    configuration {
+        modi:                       "drun,run,filebrowser,window";
+        show-icons:                 false;
+        display-drun:               "drun";
+        display-run:                "run";
+        display-filebrowser:        "files";
+        display-window:             "windows";
+        drun-display-format:        "{name} [<span weight='light' size='small' color='#444444'><i>({generic})</i></span>]";
+        window-format:              "{w} · {c} · {t}";
     }
 
+    * {
+        border-colour:               var(selected);
+        handle-colour:               var(selected);
+        background-colour:           var(background);
+        foreground-colour:           var(foreground);
+        alternate-background:        var(background-alt);
+        normal-background:           var(background);
+        normal-foreground:           var(foreground);
+        urgent-background:           var(urgent);
+        urgent-foreground:           var(background);
+        active-background:           var(active);
+        active-foreground:           var(background);
+        selected-normal-background:  var(selected);
+        selected-normal-foreground:  var(background);
+        selected-urgent-background:  var(active);
+        selected-urgent-foreground:  var(background);
+        selected-active-background:  var(urgent);
+        selected-active-foreground:  var(background);
+        alternate-normal-background: var(background);
+        alternate-normal-foreground: var(foreground);
+        alternate-urgent-background: var(urgent);
+        alternate-urgent-foreground: var(background);
+        alternate-active-background: var(active);
+        alternate-active-foreground: var(background);
+    }
+
+    /*****----- Main Window -----*****/
     window {
-      height: 600px;
-      width: 400;
-      border: 2px;
-      border-color: @border-col;
-      background-color: @bg-col;
+        transparency:                "real";
+        location:                    center;
+        anchor:                      center;
+        fullscreen:                  false;
+        width:                       600px;
+        border:                      3px solid;
+        border-color:                @border-colour;
+        background-color:            @background-colour;
     }
 
+    /*****----- Main Box -----*****/
     mainbox {
-      background-color: @bg-col;
+        spacing:                     10px;
+        padding:                     15px;
+        background-color:            transparent;
+        children:                    [ "inputbar", "message", "listview", "mode-switcher" ];
     }
 
+    /*****----- Inputbar -----*****/
     inputbar {
-      children: [prompt,entry];
-      background-color: @bg-col-light;
-      border-radius: 5px;
-      padding: 0px;
-    }
-
-    prompt {
-      background-color: @green;
-      padding: 4px;
-      text-color: @bg-col-light;
-      border-radius: 3px;
-      margin: 10px 0px 10px 10px;
-    }
-
-    textbox-prompt-colon {
-      expand: false;
-      str: ":";
+        spacing:                     10px;
+        padding:                     10px 5px;
+        background-color:            transparent;
+        text-color:                  @foreground;
     }
 
     entry {
-      padding: 6px;
-      margin: 10px 10px 10px 5px;
-      text-color: @fg-col;
-      background-color: @bg-col;
-      border-radius: 3px;
+        placeholder:                 "search...";
+        placeholder-color:           @urgent;
     }
 
+    /*****----- Listview -----*****/
     listview {
-      border: 0px 0px 0px;
-      padding: 6px 0px 0px;
-      margin: 10px 0px 0px 6px;
-      columns: 1;
-      background-color: @bg-col;
-      cycle: true;
+        columns:                     1;
+        lines:                       10;
+        cycle:                       true;
+        spacing:                     10px;
+        background-color:            transparent;
+        text-color:                  @foreground-colour;
     }
 
+    /*****----- Elements -----*****/
     element {
-      padding: 8px;
-      margin: 0px 10px 4px 4px;
-      background-color: @bg-col;
-      text-color: @fg-col;
+        spacing:                     10px;
+        background-color:            transparent;
+        text-color:                  @foreground-colour;
     }
 
-    element-icon {
-      size: 28px;
+    element selected.normal {
+        background-color:            var(selected-normal-background);
     }
 
-    element selected {
-      background-color:  @selected-col ;
-      text-color: @fg-col2  ;
-      border-radius: 3px;
+    element selected.urgent {
+        background-color:            var(selected-urgent-background);
     }
 
+    /*****----- Mode Switcher -----*****/
     mode-switcher {
-      spacing: 0;
+        spacing:                     0px;
+        background-color:            transparent;
+        text-color:                  @foreground-colour;
     }
 
     button {
-      padding: 10px;
-      background-color: @bg-col-light;
-      text-color: @grey;
-      vertical-align: 0.5; 
-      horizontal-align: 0.5;
+        background-color:            transparent;
+        text-color:                  inherit;
     }
 
     button selected {
-      background-color: @bg-col;
-      text-color: @green;
+        background-color:            transparent;
+        text-color:                  @active;
     }
-  '';
+'';
 }
+
