@@ -17,6 +17,7 @@
     neofetch
 
     grim
+    pavucontrol
     ripgrep
     wl-clipboard
     swww
