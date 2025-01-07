@@ -9,7 +9,8 @@
     ./rofi.nix
     ./zsh.nix
     ./neovim/neovim.nix
-    ./lf/lf.nix
     ./waybar.nix
+    ./lf/lf.nix
+    ./discord/discord.nix
   ];
 }
