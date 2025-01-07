@@ -14,10 +14,6 @@
     gnumake
     google-chrome
     spotify
-
-    zsh
-    zsh-autosuggestions
-    zsh-syntax-highlighting
     neofetch
 
     grim
