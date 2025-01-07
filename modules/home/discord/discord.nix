@@ -6,6 +6,6 @@
     #})
     webcord-vencord
   ];
-  xdg.configFile."Vencord/themes/gruvbox.theme.css".source = ./gruvbox.css;
-  xdg.configFile."Vencord/themes/DarkMatter.theme.css".source = ./darkmatter.css;
+  xdg.configFile."Webcord/Themes/gruvbox.theme.css".source = ./gruvbox.css;
+  xdg.configFile."Webcord/Themes/DarkMatter.theme.css".source = ./darkmatter.css;
 }
