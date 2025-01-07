@@ -4,7 +4,8 @@
   programs.kitty = {
     enable = true;
     font = {
-      name = "Terminess Nerd Font";
+      #name = "Terminess Nerd Font";
+      name = "monocraft";
       size = 14;
     };
     extraConfig = "
