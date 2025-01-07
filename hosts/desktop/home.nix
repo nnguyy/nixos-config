@@ -20,7 +20,6 @@
     zsh-syntax-highlighting
     neofetch
 
-    wofi
     grim
     ripgrep
     wl-clipboard
