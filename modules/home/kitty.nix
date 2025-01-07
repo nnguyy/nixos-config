@@ -5,8 +5,9 @@
     enable = true;
     font = {
       #name = "Terminess Nerd Font";
-      name = "monocraft";
-      size = 14;
+      name = "Monocraft";
+      #size = 14;
+      size = 12;
     };
     extraConfig = "
     cursor_trail 3  
