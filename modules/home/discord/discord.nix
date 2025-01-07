@@ -10,6 +10,6 @@
 
   home.file = {
     ".config/vesktop/themes/gruvbox.theme.css".source = ./gruvbox.css;
-    ".config/vesktop/themes/DarkMatter.theme.css".source ./darkmatter.css;
+    ".config/vesktop/themes/DarkMatter.theme.css".source = ./darkmatter.css;
   };
 }
