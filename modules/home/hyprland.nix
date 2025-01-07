@@ -2,6 +2,7 @@
 
 {
   wayland.windowManager.hyprland = {
+    enable = true;
     settings = {
       monitor = ",1920x1080@180,0x0,1";
 
