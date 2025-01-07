@@ -7,6 +7,9 @@
     #webcord-vencord
     vesktop
   ];
-  xdg.configFile."Vencord/themes/gruvbox.theme.css".source = ./gruvbox.css;
-  xdg.configFile."Vencord/themes/DarkMatter.theme.css".source = ./darkmatter.css;
+
+  home.file = {
+    ".config/vesktop/themes/gruvbox.theme.css".source = ./gruvbox.css;
+    ".config/vesktop/themes/DarkMatter.theme.css".source ./darkmatter.css;
+  };
 }
