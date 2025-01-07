@@ -12,7 +12,8 @@
         active:         #5D8787FF;
         urgent:         #444444FF;
     }
-
+    '';
+  xdg.configFile."rofi/config.rasi".text = ''
     /*****----- Configuration -----*****/
     configuration {
         modi:                       "drun,run,filebrowser,window";
