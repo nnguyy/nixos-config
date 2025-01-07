@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ./hyprland.nix
     ./btop.nix
     ./git.nix
     ./kitty.nix
