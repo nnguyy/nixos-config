@@ -112,7 +112,7 @@
         "$mainMod,M,exit"
         "$mainMod,S,exec,lf"
         "$mainMod,Z,togglefloating"
-        "$mainMod,A,exec,rofi -show drun"
+        "$mainMod,A,exec,rofi -show drun -font 'Terminess Nerd Font 16'"
         "$mainMod,C,pseudo"
         "$mainMod,X,togglesplit"
         "$mainMod,j,movefocus,l"
