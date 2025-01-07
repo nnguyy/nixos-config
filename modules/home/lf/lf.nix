@@ -1,6 +1,10 @@
 { pkgs, ... }:
 
 {
+  home.file = {
+    ".config/lf/icons".source = ./icons;
+  };
+
   # lf config
   programs.lf = {
     enable = true;
