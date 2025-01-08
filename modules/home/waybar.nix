@@ -28,7 +28,7 @@
         font-family: monocraft;
         font-size: 14px;
         padding: 0px;
-        margin: 1px;
+        margin: 0px;
       }
 
       window#waybar {
@@ -39,7 +39,6 @@
       #workspaces button {
         color: #d0d0d0; /* Light gray text */
         background: transparent;
-        border-radius: 4px;
       }
 
       #workspaces button.active {
@@ -50,13 +49,11 @@
       #workspaces button.focused {
         color: #000000; /* Black text */
         background: #ffffff; /* White background */
-        border-radius: 4px;
       }
 
       #workspaces button.urgent {
         color: #ff0000; /* Red text for urgent workspace */
         background: #000000; /* Black background */
-        border-radius: 4px;
       }
 
       #workspaces button:hover {
