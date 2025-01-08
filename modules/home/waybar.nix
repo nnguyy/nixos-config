@@ -27,7 +27,7 @@
         border-radius: 0;
         font-family: monocraft;
         font-size: 14px;
-        padding: 2px;
+        padding: 0px;
         margin: 1px;
       }
 
