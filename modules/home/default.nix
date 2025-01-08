@@ -12,6 +12,7 @@
     ./waybar.nix
     ./yazi.nix
     ./ghostty.nix
+    ./tmux.nix
     ./lf/lf.nix
     ./discord/discord.nix
   ];
