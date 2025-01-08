@@ -31,7 +31,8 @@
       window#waybar {
         background: rgba(0, 0, 0, 0.2);
         color: #ffffff;
-        height: 20px;
+        padding: 0px;
+        margin: 0px;
       }
 
       #workspaces button {
