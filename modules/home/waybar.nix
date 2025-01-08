@@ -5,6 +5,7 @@
     enable = true;
     settings = {
       mainbar = {
+        font = "monocraft, 12"
         layer = "top";
         position = "top";
         modules-left = [ "hyprland/workspaces" ]; 
