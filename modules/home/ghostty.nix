@@ -7,7 +7,6 @@
     installVimSyntax = true;
 
     settings = {
-      cursorTrail = 3;
     };
   };
 }
