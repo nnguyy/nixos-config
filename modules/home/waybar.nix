@@ -5,7 +5,6 @@
     enable = true;
     settings = {
       mainbar = {
-        font = "monocraft, 12";
         layer = "top";
         position = "top";
         modules-left = [ "hyprland/workspaces" ]; 
@@ -21,5 +20,13 @@
         };
       };
     };
+
+    style = ''
+      * {
+        border: none;
+        border-radius: 0;
+        font-family: monocraft;
+      }
+    '';
   };
 }
