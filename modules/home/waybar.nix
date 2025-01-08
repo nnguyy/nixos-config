@@ -15,7 +15,7 @@
           format = "{capacity} %";
         };
         "clock" = {
-          format = "{:%a %d | %b | %I:%M %p}";
+          format = "{:%b %d | %a | %I:%M %p}";
           timezone = "America/New_York";
         };
       };
@@ -27,15 +27,13 @@
         border-radius: 0;
         font-family: monocraft;
         font-size: 14px;
-        padding: 2px;
-        margin: 1px;
       }
 
       window#waybar {
         background: rgba(0, 0, 0, 0.2);
         color: #ffffff;
-        padding: 0px;
-        margin: 0px;
+        padding: 2px;
+        margin: 1px;
       }
 
       #workspaces button {
