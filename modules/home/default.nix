@@ -10,7 +10,7 @@
     ./zsh.nix
     ./neovim/neovim.nix
     ./waybar.nix
-    ./lf/lf.nix
+    ./yazi.nix
     ./discord/discord.nix
   ];
 }
