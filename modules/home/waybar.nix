@@ -5,7 +5,6 @@
     enable = true;
     settings = {
       mainbar = {
-        height = "20";
         layer = "top";
         position = "top";
         modules-left = [ "hyprland/workspaces" ]; 
@@ -37,8 +36,6 @@
       }
 
       #workspaces button {
-        padding: 5px;
-        margin: 2px;
         color: #d0d0d0; /* Light gray text */
         background: transparent;
         border-radius: 4px;
