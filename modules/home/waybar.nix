@@ -27,13 +27,13 @@
         border-radius: 0;
         font-family: monocraft;
         font-size: 14px;
+        padding: 2px;
+        margin: 1px;
       }
 
       window#waybar {
         background: rgba(0, 0, 0, 0.2);
         color: #ffffff;
-        padding: 2px;
-        margin: 1px;
       }
 
       #workspaces button {
