@@ -34,32 +34,34 @@
       }
 
       #workspaces button {
-          padding: 5px;
-          color: #313244;
-          margin-right: 5px;
+        padding: 5px;
+        margin: 2px;
+        color: #d0d0d0; /* Light gray text */
+        background: transparent;
+        border-radius: 4px;
       }
 
       #workspaces button.active {
-          color: #a6adc8;
+        color: #ffffff; /* White text for active workspace */
+        background: #444444; /* Dark gray background for active workspace */
       }
 
       #workspaces button.focused {
-          color: #a6adc8;
-          background: #eba0ac;
-          border-radius: 10px;
+        color: #000000; /* Black text */
+        background: #ffffff; /* White background */
+        border-radius: 4px;
       }
 
       #workspaces button.urgent {
-          color: #11111b;
-          background: #a6e3a1;
-          border-radius: 10px;
+        color: #ff0000; /* Red text for urgent workspace */
+        background: #000000; /* Black background */
+        border-radius: 4px;
       }
 
       #workspaces button:hover {
-          background: #11111b;
-          color: #cdd6f4;
-          border-radius: 10px;
-      }
+        background: #666666; /* Lighter gray on hover */
+        color: #ffffff; /* White text */
+      }    
     '';
   };
 }
