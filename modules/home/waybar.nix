@@ -32,13 +32,14 @@
       }
 
       window#waybar {
-        background: rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 0, 0);
         color: #ffffff;
       }
 
       #workspaces button {
         color: #d0d0d0; /* Light gray text */
         background: transparent;
+        padding: 1px;
       }
 
       #workspaces button.active {
