@@ -11,6 +11,7 @@
     ./neovim/neovim.nix
     ./waybar.nix
     ./yazi.nix
+    ./lf/lf.nix
     ./discord/discord.nix
   ];
 }
