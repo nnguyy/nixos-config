@@ -27,6 +27,11 @@
         border-radius: 0;
         font-family: monocraft;
       }
+
+      window#waybar {
+        background: rgba(0, 0, 0, 0.2);
+        color: #ffffff;
+      }
     '';
   };
 }
