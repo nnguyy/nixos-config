@@ -5,6 +5,7 @@
     enable = true;
     settings = {
       mainbar = {
+        height = "20";
         layer = "top";
         position = "top";
         modules-left = [ "hyprland/workspaces" ]; 
