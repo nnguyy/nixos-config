@@ -2,7 +2,7 @@
   description = "Nixos config flake";
 
   inputs = {
-    #stylix.url = "github:danth/stylix";
+    stylix.url = "github:danth/stylix";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
     home-manager = {
@@ -32,7 +32,7 @@
       modules = [
         ./hosts/${name}/configuration.nix
         inputs.home-manager.nixosModules.default
-        #inputs.stylix.nixosModules.stylix
+        inputs.stylix.nixosModules.stylix
       ];
     };
   in
