@@ -1,4 +1,4 @@
-{ pkgs, inputs, ... }:
+{ pkgs, ... }:
 
 {
   stylix = {
@@ -6,7 +6,7 @@
     image = ../../wallpapers/wallpaper2.png;
 
     cursor = {
-      package = <bibata-cursors>;
+      package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
     };
 
