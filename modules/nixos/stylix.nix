@@ -5,7 +5,7 @@
     enable = true;
     image = ../../wallpapers/wallpaper2.png;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-mayhem.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/seti.yaml";
 
     cursor = {
       package = pkgs.bibata-cursors;
