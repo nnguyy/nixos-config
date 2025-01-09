@@ -2,11 +2,8 @@
 FLAKE_PATH = ~/nixos-config
 
 # default target 
-# TODO: change this to default
+# TODO: change this to whatever host
 all: desktop
-
-default:
-	sudo nixos-rebuild switch --flake ${FLAKE_PATH}#default
 
 desktop:
 	sudo nixos-rebuild switch --flake ${FLAKE_PATH}#desktop
