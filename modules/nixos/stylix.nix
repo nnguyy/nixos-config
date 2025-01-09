@@ -9,7 +9,7 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
 
     opacity = {
-      desktop = 1.0;
+      desktop = 0.0;
     };
 
     cursor = {
