@@ -1,9 +1,12 @@
 { pkgs, ... }:
 
 {
-  stylix.enable = true;
-  stylix.image = ../../wallpapers/wallpaper2.png;
+  stylix = {
+    enable = true;
+    image = ../../wallpapers/wallpaper2.png;
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/3024.yaml";
+  };
 
-  stylix.base16Scheme = "${pkgs.base16-schemes}/share/themes/3024.yaml";
+
 
 }
