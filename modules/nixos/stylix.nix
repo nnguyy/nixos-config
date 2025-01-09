@@ -11,7 +11,7 @@
     };
 
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/ashes.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
   };
 
 
