@@ -10,8 +10,22 @@
       name = "Bibata-Modern-Classic";
     };
 
+    fonts = {
+      monospace = {
+        package = pkgs.nerdfonts.override {fonts = ["Terminess"];};
+        name = "Terminess Nerd Font";
+      };
+      sansSerif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
+      };
+      serif = {
+        package = pkgs.dejavu_fonts;
+        name = "DejaVu Sans";
+      };
+    };
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/nova.yaml";
   };
 
 
