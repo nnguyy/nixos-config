@@ -25,7 +25,7 @@
       * {
         border: none;
         border-radius: 0;
-        font-family: monocraft;
+        font-family: Terminess;
         font-size: 14px;
         padding: 0px;
         margin: 0px;
