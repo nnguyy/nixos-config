@@ -13,11 +13,10 @@
 
   outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs:
 
-  #TODO: change default userName to system user
+  #TODO: change nnguy in userName to a system user
   let
     # Define configurations for each system
     systems = {
-      default = { userName = "default"; hostName = "default"; };
       desktop = { userName = "nnguy"; hostName = "desktop"; };
       laptop = { userName = "nnguy"; hostName = "laptop"; };
     };
@@ -39,7 +38,6 @@
   {
     nixosConfigurations = {
       # Create configurations for each system
-      default = mkSystem "default" systems.default;
       desktop = mkSystem "desktop" systems.desktop;
       laptop = mkSystem "laptop" systems.laptop;
     };
