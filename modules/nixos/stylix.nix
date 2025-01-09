@@ -28,7 +28,7 @@
       };
     };
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black_metal.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal.yaml";
   };
 
 
