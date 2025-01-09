@@ -36,7 +36,7 @@
     gtk.enable = true;
     package = pkgs.bibata-cursors;
     name = "Bibata-Modern-Classic";
-    size = 24;
+    size = lib.mkDefault 24;
   };
 
   # Let Home Manager install and manage itself.
