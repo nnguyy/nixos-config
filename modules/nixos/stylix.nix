@@ -23,9 +23,12 @@
         package = pkgs.dejavu_fonts;
         name = "DejaVu Sans";
       };
+      sizes = {
+        terminal = 14;
+      };
     };
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/nova.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black_metal.yaml";
   };
 
 
