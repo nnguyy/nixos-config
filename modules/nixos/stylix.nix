@@ -3,9 +3,9 @@
 {
   stylix = {
     enable = true;
-    image = ../../wallpapers/wallpaper2.png;
+    image = ../../wallpapers/wallpaper.png;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-paper.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-dark.yaml";
 
     cursor = {
       package = pkgs.bibata-cursors;
