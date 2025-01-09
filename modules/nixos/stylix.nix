@@ -12,7 +12,7 @@
 
     fonts = {
       monospace = {
-        package = pkgs.nerd-fonts.terminess-ttf
+        package = pkgs.nerd-fonts.terminess-ttf;
         name = "Terminess Nerd Font";
       };
       sansSerif = {
