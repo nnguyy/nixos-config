@@ -8,5 +8,6 @@
     ./desktop.nix
     ./steam.nix
     ./home-manager.nix
+    ./stylix.nix
   ];
 }
