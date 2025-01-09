@@ -5,6 +5,8 @@
     enable = true;
     image = ../../wallpapers/wallpaper2.png;
 
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal-mayhem.yaml";
+
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
@@ -27,10 +29,5 @@
         terminal = 14;
       };
     };
-
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/black-metal.yaml";
   };
-
-
-
 }
