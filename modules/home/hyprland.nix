@@ -23,8 +23,8 @@
         gaps_in = 3;
         gaps_out = 3;
         border_size = 2;
-        "col.active_border" = "rgba(ffffffaa)";
-        "col.inactive_border" = "rgba(595959aa)";
+        #"col.active_border" = "rgba(ffffffaa)";
+        #"col.inactive_border" = "rgba(595959aa)";
         resize_on_border = true;
         allow_tearing = false;
         layout = "dwindle";
@@ -38,7 +38,7 @@
           enabled = true;
           range = 4;
           render_power = 3;
-          color = "rgba(1a1a1aee)";
+          #color = "rgba(1a1a1aee)";
         };
         blur = {
           enabled = true;
