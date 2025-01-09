@@ -32,12 +32,12 @@
     SHELL = "${pkgs.zsh}/bin/zsh";
   };
 
-  home.pointerCursor = {
-    gtk.enable = true;
-    package = pkgs.bibata-cursors;
-    name = "Bibata-Modern-Classic";
-    size = lib.mkDefault 24;
-  };
+#  home.pointerCursor = {
+#    gtk.enable = true;
+#    package = pkgs.bibata-cursors;
+#    name = "Bibata-Modern-Classic";
+#    size = 24;
+#  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
