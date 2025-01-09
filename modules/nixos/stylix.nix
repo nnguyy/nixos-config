@@ -5,7 +5,7 @@
     enable = true;
     image = ../../wallpapers/wallpaper2.png;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/phd.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-paper.yaml";
 
     cursor = {
       package = pkgs.bibata-cursors;
