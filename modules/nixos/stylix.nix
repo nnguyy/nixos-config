@@ -8,6 +8,10 @@
 
     base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
 
+    opacity = {
+      desktop = 0;
+    };
+
     cursor = {
       package = pkgs.bibata-cursors;
       name = "Bibata-Modern-Classic";
@@ -28,9 +32,6 @@
       };
       sizes = {
         terminal = 14;
-      };
-      opacity = {
-        desktop = 0;
       };
     };
   };
