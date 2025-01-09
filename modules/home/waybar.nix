@@ -25,7 +25,7 @@
       * {
         border: none;
         border-radius: 0;
-        font-family: Terminess;
+        font-family: Terminess Nerd Font;
         font-size: 14px;
         padding: 0px;
         margin: 0px;
