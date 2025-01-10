@@ -9,7 +9,7 @@
     ./rofi.nix
     ./zsh.nix
     ./neovim/neovim.nix
-    #./waybar.nix
+    ./waybar.nix
     ./yazi.nix
     ./ghostty.nix
     ./tmux.nix
