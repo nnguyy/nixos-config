@@ -3,6 +3,7 @@
 {
   stylix = {
     enable = true;
+    autoenable = false;
     polarity = "dark";
     image = ../../wallpapers/wallpaper.png;
 
@@ -12,7 +13,9 @@
       desktop = 1.0;
     };
 
-    targets.waybar.enable = true; 
+    targets = {
+      waybar.enable = true;
+    };
 
     cursor = {
       package = pkgs.bibata-cursors;
