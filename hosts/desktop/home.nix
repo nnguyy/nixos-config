@@ -13,7 +13,7 @@
     gh
     gnumake
     google-chrome
-    spotify
+    #spotify
     neofetch
 
     grim

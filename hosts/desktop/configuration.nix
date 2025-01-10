@@ -13,6 +13,7 @@
     git
     wget
     bibata-cursors
+    spicetify-cli
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
