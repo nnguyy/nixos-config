@@ -5,15 +5,16 @@
     enable = true;
     autoEnable = true;
     polarity = "dark";
-    image = ../../wallpapers/wallpaper.png;
+    image = ../../wallpapers/wallpaper3.png;
 
-    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
+    #base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
 
     opacity = {
       desktop = 1.0;
     };
 
     targets = {
+      #check inside ./home-manager.nix for home manager specific targets
     };
 
     cursor = {
