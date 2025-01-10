@@ -12,9 +12,7 @@
       desktop = 1.0;
     };
 
-    targets = {
-      waybar.enable = true;
-    };
+    targets.waybar.enable = false; 
 
     cursor = {
       package = pkgs.bibata-cursors;
