@@ -14,7 +14,7 @@
     };
 
     targets = {
-      waybar.enable = true;
+      #waybar.enable = true;
     };
 
     cursor = {
