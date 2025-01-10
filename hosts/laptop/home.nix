@@ -6,11 +6,7 @@
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
   imports = [
-    ../../modules/home-manager/nix-files/git.nix
-    ../../modules/home-manager/nix-files/kitty.nix
-    ../../modules/home-manager/nix-files/lf.nix
-    ../../modules/home-manager/nix-files/neovim.nix
-    ../../modules/home-manager/nix-files/zsh.nix
+    ../../modules/home
   ];
 
   home.packages = with pkgs; [
@@ -18,14 +14,11 @@
     gnumake
     google-chrome
     spotify
-
-    zsh
-    zsh-autosuggestions
-    zsh-syntax-highlighting
     neofetch
 
-    wofi
     grim
+    pavucontrol
+    ripgrep
     wl-clipboard
     swww
     dunst
@@ -34,16 +27,17 @@
 
   nixpkgs.config.allowUnfree = true;
 
-  home.file = {
-    ".config/hypr/hyprland.conf".source = ../../modules/home-manager/files/hyprland/hyprland.conf;
-    ".config/waybar/config.jsonc".source = ../../modules/home-manager/files/waybar/config.jsonc;
-    ".config/lf/icons".source = ../../modules/home-manager/files/lf/icons;
-  };
-
   home.sessionVariables = {
     EDITOR = "nvim";
     SHELL = "${pkgs.zsh}/bin/zsh";
   };
+
+#  home.pointerCursor = {
+#    gtk.enable = true;
+#    package = pkgs.bibata-cursors;
+#    name = "Bibata-Modern-Classic";
+#    size = 24;
+#  };
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
