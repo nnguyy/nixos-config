@@ -13,6 +13,7 @@
     git
     wget
     bibata-cursors
+    spotify
     spicetify-cli
   ];
 
