@@ -108,8 +108,8 @@
       "$mainMod" = "SUPER";
 
       bindm = [
-        "$mod, mouse:272, movewindow"
-        "$mod, mouse:273, resizewindow"
+        "$mainMod, mouse:272, movewindow"
+        "$mmainMod, mouse:273, resizewindow"
       ];
 
       bind = [
