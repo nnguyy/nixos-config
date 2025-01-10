@@ -9,7 +9,11 @@
     base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
 
     opacity = {
-      desktop = 0.0;
+      desktop = 1.0;
+    };
+
+    targets = {
+      waybar.enable = false;
     };
 
     cursor = {

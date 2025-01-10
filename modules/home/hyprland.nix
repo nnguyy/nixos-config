@@ -15,7 +15,7 @@
       exec-once = [
         "kitty"
         "waybar"
-        "swww init && swww img ~/nixos-config/wallpapers/wallpaper.png"
+        #"swww init && swww img ~/nixos-config/wallpapers/wallpaper.png"
         "google-chrome-stable"
       ];
 
@@ -106,6 +106,12 @@
       ];
 
       "$mainMod" = "SUPER";
+
+      bindm = [
+        "$mod, mouse:272, movewindow"
+        "$mod, mouse:273, resizewindow"
+      ];
+
       bind = [
         "$mainMod,RETURN,exec,kitty"
         "$mainMod,W,killactive"
