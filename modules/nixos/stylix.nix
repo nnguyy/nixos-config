@@ -3,7 +3,7 @@
 {
   stylix = {
     enable = true;
-    autoEnable = false;
+    autoEnable = true;
     polarity = "dark";
     image = ../../wallpapers/wallpaper.png;
 
@@ -15,8 +15,8 @@
 
     targets = {
       #waybar.enable = true;
-      hyprland.enable = true;
-      kitty.enable = true;
+      #hyprland.enable = true;
+      #kitty.enable = true;
     };
 
     cursor = {
