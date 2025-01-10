@@ -7,7 +7,7 @@
     polarity = "dark";
     image = ../../wallpapers/wallpaper.png;
 
-    #base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
 
     opacity = {
       desktop = 1.0;
