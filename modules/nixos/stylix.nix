@@ -3,7 +3,7 @@
 {
   stylix = {
     enable = true;
-    autoenable = false;
+    autoEnable = false;
     polarity = "dark";
     image = ../../wallpapers/wallpaper.png;
 
