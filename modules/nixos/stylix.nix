@@ -13,7 +13,7 @@
     };
 
     targets = {
-      waybar.enable = false;
+      waybar.enable = true;
     };
 
     cursor = {
