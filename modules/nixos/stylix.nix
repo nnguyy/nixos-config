@@ -14,7 +14,7 @@
     };
 
     targets = {
-      waybar.enable = true;
+      #waybar.enable = true;
       #hyprland.enable = true;
       #kitty.enable = true;
     };
