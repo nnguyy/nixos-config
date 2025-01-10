@@ -7,6 +7,7 @@
       stylix.targets = {
         waybar.enable = false;
         neovim.transparentBackground.main = true;
+        neovim.transparentBackground.signColumn = true;
       };
     }];
     users = {
