@@ -19,6 +19,7 @@
   environment.systemPackages = with pkgs; [
     vim 
     git
+    gh
     wget
     waybar
     bibata-cursors
