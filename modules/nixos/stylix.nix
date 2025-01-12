@@ -5,7 +5,7 @@
     enable = true;
     autoEnable = true;
     polarity = "dark";
-    image = ../../wallpapers/street.jpg;
+    image = ../../wallpapers/bluenyellow.png;
 
     #base16Scheme = "${pkgs.base16-schemes}/share/themes/da-one-black.yaml";
 
