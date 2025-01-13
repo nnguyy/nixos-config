@@ -109,7 +109,7 @@
 
       bindm = [
         "$mainMod, mouse:272, movewindow"
-        "$mainMod, mouse:273, resizewindow"
+       "$mainMod, mouse:273, resizewindow"
       ];
 
       bind = [
@@ -129,6 +129,10 @@
         "ALT,l,resizeactive,50 0"
         "ALT,i,resizeactive,0 -50"
         "ALT,k,resizeactive,0 50"
+        "$mainMod ALT, j, movewindow, l"
+        "$mainMod ALT, l, movewindow, r"
+        "$mainMod ALT, i, movewindow, u"
+        "$mainMod ALT, k, movewindow, d"
         "$mainMod,1,workspace,1"
         "$mainMod,2,workspace,2"
         "$mainMod,3,workspace,3"
