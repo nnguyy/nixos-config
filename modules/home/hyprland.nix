@@ -121,6 +121,7 @@
         "$mainMod,A,exec,rofi -show drun -font 'Terminess Nerd Font 16'"
         "$mainMod,C,pseudo"
         "$mainMod,X,togglesplit"
+        "$mainMod,f,fullscreen"
         "$mainMod,j,movefocus,l"
         "$mainMod,l,movefocus,r"
         "$mainMod,i,movefocus,u"
