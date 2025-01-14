@@ -10,6 +10,7 @@
   ];
 
   home.packages = with pkgs; [
+    gh
     gnumake
     google-chrome
     spotify
