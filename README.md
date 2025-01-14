@@ -13,17 +13,17 @@ This repository contains my NixOS system configuration and Home Manager user con
 ## Setup Instructions
 1. Boot a NixOS Live ISO
    - https://nixos.org/download/
-3. Follow NixOS Installation Guide
+2. Follow NixOS Installation Guide
    - https://nixos.org/manual/nixos/stable/#sec-installation
-4. Clone this Repo
-   - git clone https://github.com/nnguyy/nixos-config.git
-5. Edit flake.nix to set machine-specific values
-   - change userName (nnguy) to for host 
-6. Copy YOUR auto genereated hardware configuration to nixos-config/hosts/default
-   - cp /etc/nixos/hardware-configuration.nix ~/nixos-config/hosts/default
-8. Edit makefile
+3. Clone this Repo
+   - nix --extra-experimental-features "nix-command flakes" run nixpkgs#git -- clone https://github.com/nnguyy/nixos-config
+4. Edit flake.nix to set machine-specific values
+   - change userName (nnguy)
+5. Copy Hardware Configuration
+   - cp /etc/nixos/hardware-configuration.nix ~/nixos-config/hosts/laptop
+6. Run sudo nixos-rebuild switch --flake (flake path)#(host)
+   - example: sudo nixos-rebuild switch --flake ~/nixos-config/#laptop
+## Optional 
+1. Edit makefile
    - change FLAKE_PATH to path of nixos-config
    - select default target
-9. Run sudo nixos-rebuild switch --flake (flake path)#(host)
-   - example: sudo nixos-rebuild switch --flake ~/nixos-config/#desktop
-   - after install running 'make' should run this command 
