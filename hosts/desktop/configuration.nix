@@ -10,7 +10,6 @@
 
   environment.systemPackages = with pkgs; [
     vim 
-    git
     wget
     bibata-cursors
   ];
