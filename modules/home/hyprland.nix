@@ -115,7 +115,7 @@
       bind = [
         "$mainMod,RETURN,exec,kitty"
         "$mainMod,W,killactive"
-        "$mainMod,M,exit"
+        "$mainMod,B,exit"
         "$mainMod,S,exec,lf"
         "$mainMod,Z,togglefloating"
         "$mainMod,A,exec,rofi -show drun -font 'Terminess Nerd Font 16'"
