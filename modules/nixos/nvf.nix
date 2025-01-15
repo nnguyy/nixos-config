@@ -10,6 +10,8 @@
         autocomplete.nvim-cmp.enable = true;
         preventJunkFiles = true;
 
+        orgmode.enable = true;
+
         languages = {
           enableLSP = true;
           enableTreesitter = true;
