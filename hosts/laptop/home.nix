@@ -1,4 +1,4 @@
-{ config, pkgs, inputs, nvf, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   home.username = "nnguy";
