@@ -3,12 +3,12 @@
 {
   programs.nvf = {
     enable = true;
-    settings = {
+    settings.vim = {
       statusline.lualine.enable = true;
       telescope.enable = true;
-      vim.autocomplete.nvim-cmp.enable = true;
+      autocomplete.nvim-cmp.enable = true;
 
-      vim.languages = {
+      languages = {
         enableLSP = true;
         enableTreesitter = true;
 
