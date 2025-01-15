@@ -15,6 +15,6 @@
     ./tmux.nix
     ./lf/lf.nix
     ./discord/discord.nix
-    #./nvf.nix
+    ./nvf.nix
   ];
 }
