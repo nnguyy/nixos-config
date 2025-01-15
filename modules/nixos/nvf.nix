@@ -8,7 +8,7 @@
       telescope.enable = true;
       vim.autocomplete.nvim-cmp.enable = true;
 
-      languages = {
+      vim.languages = {
         enableLSP = true;
         enableTreesitter = true;
 
