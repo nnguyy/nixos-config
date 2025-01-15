@@ -18,7 +18,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs:
+  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, nvf, ... }@inputs:
 
   #TODO: change nnguy in userName to a system user
   let
