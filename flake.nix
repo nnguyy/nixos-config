@@ -59,8 +59,8 @@
     };
 
     homeConfigurations = {
-      desktop = mkHome systems.desktop;
-      laptop = mkHome systems.laptop;
+      "${systems.desktop.userName}@${systems.desktop.hostName}" = mkHome systems.desktop;
+      "${systems.laptop.userName}@${systems.laptop.hostName}" = mkHome systems.laptop;
     };
   };
 }
