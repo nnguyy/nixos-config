@@ -8,12 +8,13 @@
     ./kitty.nix
     ./rofi.nix
     ./zsh.nix
-    ./neovim/neovim.nix
+    #./neovim/neovim.nix
     ./waybar.nix
     ./yazi.nix
     ./ghostty.nix
     ./tmux.nix
     ./lf/lf.nix
     ./discord/discord.nix
+    ./nvf.nix
   ];
 }
