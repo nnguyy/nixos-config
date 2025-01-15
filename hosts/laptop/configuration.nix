@@ -10,6 +10,7 @@
 
   environment.systemPackages = with pkgs; [
     vim 
+    gcc
     wget
     bibata-cursors
     brightnessctl
