@@ -9,13 +9,13 @@
         position = "top";
         modules-left = [ "hyprland/workspaces" "hyprland/submap" ]; 
         modules-center = [ "hyprland/window" ];
-        modules-right = [ "battery" "clock" ];
+        modules-right = [ "clock" "battery" ];
 
         "battery" = {
           format = "{capacity} %";
         };
         "clock" = {
-          format = "{:%b %d | %a | %I:%M %p}";
+          format = "{:%b %d | %a | %I:%M %p }";
           timezone = "America/New_York";
         };
       };
