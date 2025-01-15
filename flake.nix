@@ -12,6 +12,10 @@
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    nvf = {
+      url = "github:notashelf/nvf";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = { self, nixpkgs, hyprland-qtutils, ... }@inputs:
@@ -37,6 +41,14 @@
         inputs.stylix.nixosModules.stylix
       ];
     };
+
+    mkHome = config: home-manager.lib.homeManagerConfiguration {
+      inherit (inputs.nixpkgs) pkgs;
+      modules = [
+        ./hosts/#(config.hostName)/home.nix
+        inputs.nvf.homeManagerModules.default
+      ];
+    };
   in
   {
     nixosConfigurations = {
@@ -44,5 +56,10 @@
       desktop = mkSystem "desktop" systems.desktop;
       laptop = mkSystem "laptop" systems.laptop;
     };
+
+    homeConfigurations = (
+      desktop = mkHome systems.desktop;
+      laptop = mkHome systems.laptop;
+    );
   };
 }
