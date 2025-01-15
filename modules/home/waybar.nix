@@ -12,7 +12,7 @@
         modules-right = [ "clock" "battery" ];
 
         "battery" = {
-          format = "{capacity} %";
+          format = "| {capacity} %";
         };
         "clock" = {
           format = "{:%b %d | %a | %I:%M %p }";
