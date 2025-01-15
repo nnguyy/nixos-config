@@ -45,7 +45,7 @@
     mkHome = config: home-manager.lib.homeManagerConfiguration {
       inherit (inputs.nixpkgs) pkgs;
       modules = [
-        ./hosts/#(config.hostName)/home.nix
+        ./hosts/${config.hostName}/home.nix
         inputs.nvf.homeManagerModules.default
       ];
     };
