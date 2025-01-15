@@ -25,8 +25,6 @@
     inputs.hyprland-qtutils.packages."${pkgs.system}".default
   ];
 
-  programs.nvf.enable = true;
-
   nixpkgs.config.allowUnfree = true;
 
   home.sessionVariables = {
