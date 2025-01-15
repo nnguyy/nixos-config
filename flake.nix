@@ -39,6 +39,7 @@
         ./hosts/${name}/configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
+        inputs.nvf.nixosModules.default
       ];
     };
 
@@ -46,7 +47,7 @@
       inherit (inputs.nixpkgs) pkgs;
       modules = [
         ./hosts/${config.hostName}/home.nix
-        inputs.nvf.homeManagerModules.default
+        #inputs.nvf.homeManagerModules.default
       ];
     };
   in
