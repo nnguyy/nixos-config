@@ -57,9 +57,9 @@
       laptop = mkSystem "laptop" systems.laptop;
     };
 
-    homeConfigurations = (
+    homeConfigurations = {
       desktop = mkHome systems.desktop;
       laptop = mkHome systems.laptop;
-    );
+    };
   };
 }
