@@ -17,6 +17,7 @@
               "~/org/*"
             ];
             setupOpts.org_default_notes_file = "~/org/notes.org";
+            treesitter.enable = true;
           };
         };
         
