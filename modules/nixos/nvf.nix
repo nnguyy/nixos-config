@@ -29,9 +29,14 @@
                   template = "\n*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?";
                   target = "~/org/journal/%<%Y-%m>.org";
                 };
+                n = {
+                  description = "Note";
+                  template = "* %^{Note Title:}\n  %U\n\n%?";
+                  target = "~/org/notes.org";
+                };
                 t = {
                   description = "Todo";
-                  template = "* TODO %?\n %u";
+                  template = "* TODO %^{Task Description:}\n  SCHEDULED: %^t\n  %?";
                   target = "~/org/todo.org";
                 };
                 p = {
