@@ -31,18 +31,18 @@
                 };
                 n = {
                   description = "Note";
-                  template = "* %^{Note Title:}\n  %U\n\n%?";
+                  template = "* %^{Note Title}\n  %U\n\n%?";
                   target = "~/org/notes.org";
                 };
                 t = {
                   description = "Todo";
-                  template = "* TODO %^{Task Description:}\n  SCHEDULED: %^t\n  %?";
+                  template = "* TODO %^{Task Description}\n  SCHEDULED: %^t\n  %?";
                   target = "~/org/todo.org";
                 };
                 p = {
                   description = "Project";
                   template = "* %?\n %u";
-                  target = "~/org/projects/%^{Project name: |New Project}.org";
+                  target = "~/org/projects/%^{Project name |New Project}.org";
                 };
               };
             };
