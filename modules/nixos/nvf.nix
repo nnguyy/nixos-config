@@ -26,7 +26,7 @@
               org_capture_templates = {
                 j = {
                   description = "Journal";
-                  template = "\n*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?";
+                  template = "*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?";
                   target = "~/org/journal/%<%Y-%m>.org";
                 };
                 n = {
@@ -44,7 +44,7 @@
                   subtemplates = {
                     m = {
                       description = "make";
-                      template = "* %^{Project Name}\n %U\n\n * Tasks\n ** TODO %?";
+                      template = "* %^{Project Name}\n %U\n\n* Tasks\n ** TODO %?";
                       target = "~/org/projects/%^{File Name |New Project}.org";
                     };
                     n = {
@@ -56,7 +56,6 @@
                       description = "task";
                       template = "** TODO %?";
                       target = "~/org/projects/%^{File name |New Project}.org";
-                      heading = "Tasks";
                     };
                   };
                 };
