@@ -31,7 +31,19 @@
                     ];
                   target = "~/org/journal/%<%Y-%m>.org";
                   datetree = {
-                    tree_type = "day";
+                    tree_type = "custom";
+                    tree = [
+                      {
+                        format = "%B %Y Journal";
+                        pattern = "*^%a+ %d%d%d%d Journal$";
+                        order = "1";
+                      }
+                      {
+                        format = "%Y-%m-%d %A";
+                        pattern = "^(%d%d%d%d%-%d%d%-%d%d) %a+$";
+                        order = "1";
+                      }
+                    ];
                   };
                 };
                 n = {
