@@ -26,7 +26,7 @@
               org_capture_templates = {
                 j = {
                   description = "Journal";
-                  template = "*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?";
+                  template = "*** %<%B %Y> Journal\n\n**** %<%Y-%m-%d> %<%A>\n%?";
                   target = "~/org/journal/%<%Y-%m>.org";
                 };
                 n = {
