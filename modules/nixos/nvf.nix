@@ -53,7 +53,7 @@
                 };
                 n = {
                   description = "Note";
-                  template = "* %^{Note Title}\n  %U\n\n%?\n";
+                  template = "\n* %^{Note Title}\n  %U\n%?";
                   target = "~/org/notes.org";
                 };
                 t = {
