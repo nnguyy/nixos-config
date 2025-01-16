@@ -23,6 +23,11 @@
             setupOpts = {
               org_agenda_files = ["~/org/*"];
               org_default_notes_file = "~/org/notes.org";
+              mappings = {
+                org = {
+                  org_global_cycle = "<A-TAB>";
+                };
+              };
               org_capture_templates = {
                 j = {
                   description = "Journal";
@@ -53,7 +58,7 @@
                 };
                 t = {
                   description = "Todo";
-                  template = "* TODO %^{Task Description}\n  SCHEDULED: %^t\n  %?";
+                  template = "* TODO %^{Task Description}\n  SCHEDULED: %^t\n%?";
                   target = "~/org/todo.org";
                 };
                 p = {
