@@ -13,12 +13,10 @@
         notes = { 
           orgmode = {
             enable = true; 
-            setupOpts.org_agenda_files = "
-              ~/org/*
-              ";
-            setupOpts.org_default_notes_file = "
-              ~/org/notes.org
-              ";
+            setupOpts.org_agenda_files = [
+              "~/org/*"
+            ];
+            setupOpts.org_default_notes_file = "~/org/notes.org";
           };
         };
         
