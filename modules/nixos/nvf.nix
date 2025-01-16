@@ -33,6 +33,7 @@
                     ];
                   target = "~/org/journal/%<%Y-%m>.org";
                   datatree = {
+                    time_prompt = true;
                     tree_type = "day";
                   };
                 };
