@@ -32,6 +32,9 @@
                     "%?"
                     ];
                   target = "~/org/journal/%<%Y-%m>.org";
+                  datatree = {
+                    tree_type = "day";
+                  };
                 };
                 n = {
                   description = "Note";
