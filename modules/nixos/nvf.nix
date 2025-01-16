@@ -37,7 +37,7 @@
                 p = {
                   description = "Project";
                   template = "* %?\n %u";
-                  target = "~/org/projects/%(read-string 'Project name: ').org";
+                  target = "~/org/projects/%(read-string).org";
                 };
               };
             };
