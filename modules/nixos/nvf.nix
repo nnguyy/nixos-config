@@ -34,6 +34,11 @@
                   template = "* TODO %?\n %u";
                   target = "~/org/todo.org";
                 };
+                p = {
+                  description = "Project";
+                  template = "* %?\n %u";
+                  target = "~/org/projects/%(read-string 'Project name: ').org";
+                };
               };
             };
             treesitter.enable = true;
