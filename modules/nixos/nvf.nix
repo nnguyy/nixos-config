@@ -28,7 +28,6 @@
           enableTreesitter = true;
 
           nix.enable = true;
-          org.enable = true;
           ts.enable = true;
           rust.enable = true;
         };
