@@ -44,7 +44,7 @@
                   subtemplates = {
                     m = {
                       description = "make";
-                      template = "* %^{Project Name}\n %U\n\n ** Tasks\n%?";
+                      template = "* %^{Project Name}\n %U\n\n * Tasks\n ** TODO %?";
                       target = "~/org/projects/%^{File Name |New Project}.org";
                     };
                     n = {
@@ -54,7 +54,7 @@
                     };
                     t = {
                       description = "task";
-                      template = "TODO %?";
+                      template = "** TODO %?";
                       target = "~/org/projects/%^{File name |New Project}.org";
                       heading = "Tasks";
                     };
