@@ -41,8 +41,8 @@
                 };
                 p = {
                   description = "Project";
-                  template = "* %^{Project name:|New Project}\n  %U\n\n** Tasks\n\n%?";
-                  target = "~/org/projects/%^{Project name |New Project}.org";
+                  template = "* %^{Project name}\n  %U\n\n** Tasks\n\n%?";
+                  target = "~/org/projects/%^{File name |New Project}.org";
                 };
               };
             };
