@@ -17,8 +17,14 @@
           };
         };
 
+        treesitter = {
+          enable = true;
+          indent.disable = ["org"];
+        };
+
         notes = { 
           orgmode = {
+            treesitter.enable = true;
             enable = true; 
             setupOpts = {
               org_agenda_files = ["~/org/*"];
@@ -83,7 +89,6 @@
                 };
               };
             };
-            treesitter.enable = true;
           };
         };
         
