@@ -37,7 +37,7 @@
                         format = "%B %Y Journal";
                         pattern = "^%a+ %d%d%d%d Journal$";
                         order = {1};
-                      },
+                      }
                       {
                         format = "%Y-%m-%d %A";
                         pattern = "^(%d%d%d%d%-%d%d%-%d%d) %a+$";
