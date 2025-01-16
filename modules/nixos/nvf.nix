@@ -29,6 +29,11 @@
                   template = "\n*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?";
                   target = "~/org/journal/%<%Y-%m>.org";
                 };
+                t = {
+                  description = "Todo";
+                  template = "* TODO %?\n %u";
+                  target = "~/org/todo.org";
+                };
               };
             };
             treesitter.enable = true;
