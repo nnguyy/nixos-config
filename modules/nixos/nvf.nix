@@ -7,8 +7,12 @@
       vim = {
         statusline.lualine.enable = true;
         telescope.enable = true;
-        autocomplete.nvim-cmp.enable = true;
         preventJunkFiles = true;
+
+        autocomplete.nvim-cmp = {
+          enable = true;
+          sourcePlugins = ["orgmode-nvim"];
+        };
 
         notes = { 
           orgmode = {
