@@ -12,6 +12,9 @@
         autocomplete.nvim-cmp = {
           enable = true;
           sourcePlugins = ["orgmode-nvim"];
+          sources = {
+            orgmode = "[Orgmode]";
+          };
         };
 
         notes = { 
