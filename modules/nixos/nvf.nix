@@ -27,7 +27,7 @@
                 j = {
                   description = "Journal";
                   template = "\n*** %<%Y-%m-%d> %<%A>\n**** %U\n\n%?";
-                  target = "~/org/journal/%<%Y-%m}.org";
+                  target = "~/org/journal/%<%Y-%m>.org";
                 };
               };
             };
