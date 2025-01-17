@@ -1,7 +1,7 @@
 { pkgs, config, lib, ... }:
 
 {
-  services.synthing = {
+  services.syncthing = {
     enable = true;
     group = "users";
     user = "nnguy";
