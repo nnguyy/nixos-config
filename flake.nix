@@ -16,9 +16,13 @@
       url = "github:notashelf/nvf";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    emacs-overlay = {
+      url = "github:nix-community/emacs-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
-  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, nvf, ... }@inputs:
+  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, nvf, emacs-overlay, ... }@inputs:
 
   #TODO: change nnguy in userName to a system user
   let
@@ -40,6 +44,9 @@
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
         inputs.nvf.nixosModules.default
+        {
+        nixpkgs.overlays = [ (import self.inputs.emacs-overlay) ];
+        }
       ];
     };
 
