@@ -14,6 +14,7 @@
     wget
     bibata-cursors
     brightnessctl
+    miraclecast
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
