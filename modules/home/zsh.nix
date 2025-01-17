@@ -7,7 +7,7 @@
     syntaxHighlighting.enable = true;
     enableCompletion = true;
     sessionVariables = {
-      PATH = "$HOME/.emacs.d/bin:$PATH";
+      PATH = "$HOME/.config/emacs.d/bin:$PATH";
     };
   };
 }
