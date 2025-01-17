@@ -15,7 +15,6 @@
     bibata-cursors
     brightnessctl
     stow
-    doom-emacs
     emacs-unstable
   ];
 
