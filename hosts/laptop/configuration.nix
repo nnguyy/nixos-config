@@ -14,7 +14,6 @@
     wget
     bibata-cursors
     brightnessctl
-    gnome-network-displays
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
