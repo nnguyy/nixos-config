@@ -15,7 +15,7 @@
     bibata-cursors
     brightnessctl
     stow
-    emacs-unstable
+    #emacs-unstable
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
