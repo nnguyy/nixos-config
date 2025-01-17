@@ -13,6 +13,7 @@
     gcc
     wget
     bibata-cursors
+    emacs-nox
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
