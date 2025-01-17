@@ -14,6 +14,9 @@
     wget
     bibata-cursors
     brightnessctl
+    stow
+    doom-emacs
+    emacs-unstable
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
