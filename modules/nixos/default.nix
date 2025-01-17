@@ -10,5 +10,6 @@
     ./home-manager.nix
     ./stylix.nix
     ./nvf.nix
+    ./synthing.nix
   ];
 }
