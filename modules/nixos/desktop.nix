@@ -21,8 +21,9 @@
     variant = "";
   };
 
-  # Nerd Fonts
+  # Fonts
   fonts.packages = with pkgs; [
+    nerd-fonts.symbols-only
     nerd-fonts.terminess-ttf
     monocraft
   ];
