@@ -29,6 +29,7 @@
             setupOpts = {
               org_agenda_files = ["~/org/*"];
               org_default_notes_file = "~/org/notes.org";
+              org_hide_leading_stars = true;
               mappings = {
                 org = {
                   org_global_cycle = "<A-TAB>";
