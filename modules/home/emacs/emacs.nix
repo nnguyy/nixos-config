@@ -7,7 +7,7 @@
   };
 
   home.file."~/.config/emacs".source = pkgs.fetchgit {
-    url = "https://github.com/doomemacs//doomemacs";
+    url = "https://github.com/doomemacs/doomemacs";
     rev = "master";
   };
   home.file."~/.doom.d".source = ./.doom.d;
