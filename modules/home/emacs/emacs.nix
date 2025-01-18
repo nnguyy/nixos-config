@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
 {
   programs.emacs = {
@@ -6,5 +6,5 @@
     package = pkgs.emacs-nox;
   };
 
-  home.file."~/.doom.d".source = ./doom;
+  home.file."${config.home.homeDirectory}/.doom.d".source = ./doom;
 }
