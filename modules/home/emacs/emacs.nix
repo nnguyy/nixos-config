@@ -6,5 +6,5 @@
     package = pkgs.emacs-nox;
   };
 
-  home.file."~/.doom.d".source = ./.doom.d;
+  home.file."~/.doom.d".source = ./doom;
 }
