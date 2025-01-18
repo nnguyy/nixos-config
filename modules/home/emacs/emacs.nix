@@ -10,5 +10,5 @@
     url = "https://github.com/doomemacs//doomemacs";
     rev = "master";
   };
-  home.file."~/.doom.d".source = ./doom.d;
+  home.file."~/.doom.d".source = ./.doom.d;
 }
