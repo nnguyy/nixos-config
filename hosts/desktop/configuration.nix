@@ -13,7 +13,8 @@
     gcc
     wget
     bibata-cursors
-    emacs-nox
+
+    #emacs-nox
     fd
     shellcheck
     pandoc
