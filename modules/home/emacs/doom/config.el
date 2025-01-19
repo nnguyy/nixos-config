@@ -43,7 +43,7 @@
 (setq org-directory "~/org/")
 
 (after! org 
-        (define-key org-mode-map (kbd "<S-tab>") #'org-cycle))
+        (define-key org-mode-map (kbd "S-<tab>") #'org-cycle))
 
 
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
