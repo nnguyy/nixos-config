@@ -1,4 +1,4 @@
-{ pkgs, config, lib, ... }:
+{ pkgs, config, ... }:
 
 {
   programs.emacs = {
@@ -6,13 +6,12 @@
     package = pkgs.emacs-nox;
   };
 
-  home.file."${config.home.homeDirectory}/.doom.d".source = ./doom;
-  home.activation = {
-    doom-emacs = lib.hm.dag.entryAfter ["writeBoundary"] ''
-      if [ ! -d "${config.home.homeDirectory}/.config/emacs" ]; then 
-        git clone https://github.com/doomeemacs/doomemacs ${config.home.homeDirectory}/.config/emacs
-        doom sync
-      fi
-      '';
+  home.file.".doom.d".source = ./doom;
+  home.file.".config/emacs" = {
+    source = pkgs.fetchgit {
+      url = "https://github.com/doomemacs/doomemacs";
+      rev = "2bc0524";
+      sha256 = "0a1px0igzhzl7mjl0wkp9jnb3sjggpbi2rnj0w2kga08d8frahcb";
+    };
   };
 }
