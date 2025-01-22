@@ -17,5 +17,6 @@
     ./discord/discord.nix
     ./syncthing.nix
     ./emacs/emacs.nix
+    ./fd.nix
   ];
 }
