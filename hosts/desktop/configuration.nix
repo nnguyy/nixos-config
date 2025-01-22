@@ -14,8 +14,6 @@
     wget
     bibata-cursors
 
-    #emacs-nox
-    fd
     shellcheck
     pandoc
   ];

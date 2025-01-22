@@ -18,9 +18,8 @@
     };
   };
 
-  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, nvf, emacs-overlay, ... }@inputs:
+  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, nvf, ... }@inputs:
 
-  #TODO: change nnguy in userName to a system user
   let
     # Define configurations for each system
     systems = {
@@ -40,9 +39,6 @@
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
         inputs.nvf.nixosModules.default
-        {
-            #nixpkgs.overlays = [ (import self.inputs.emacs-overlay) ];
-        }
       ];
     };
 
