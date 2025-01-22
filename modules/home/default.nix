@@ -8,7 +8,6 @@
     ./kitty.nix
     ./rofi.nix
     ./zsh.nix
-    #./neovim/neovim.nix
     ./waybar.nix
     ./yazi.nix
     ./ghostty.nix
@@ -18,5 +17,6 @@
     ./syncthing.nix
     ./emacs/emacs.nix
     ./fd.nix
+    ./pandoc.nix
   ];
 }
