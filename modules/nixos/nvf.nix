@@ -8,6 +8,7 @@
         statusline.lualine.enable = true;
         telescope.enable = true;
         preventJunkFiles = true;
+        useSystemClipboard = true;
 
         autocomplete.nvim-cmp = {
           enable = true;
