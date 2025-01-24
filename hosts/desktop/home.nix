@@ -16,6 +16,8 @@
     spotify
     neofetch
 
+    texlive.combinded.scheme-basic
+
     grim
     pavucontrol
     ripgrep
