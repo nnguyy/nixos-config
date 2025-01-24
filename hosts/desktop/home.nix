@@ -17,7 +17,7 @@
     neofetch
 
     texlive.combined.scheme-basic
-    texlivePackages.latexmk
+    latexmk
 
     grim
     pavucontrol
