@@ -16,8 +16,7 @@
     spotify
     neofetch
 
-    texlive.combined.scheme-basic
-    texlive.withPackage (ps: [ps.latexmk])
+    texlive.combined.scheme-full
 
     grim
     pavucontrol
