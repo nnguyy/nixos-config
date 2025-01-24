@@ -18,5 +18,6 @@
     ./emacs/emacs.nix
     ./fd.nix
     ./pandoc.nix
+    ./texlive.nix
   ];
 }
