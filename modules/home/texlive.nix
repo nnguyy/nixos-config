@@ -3,8 +3,8 @@
 {
   programs.texlive.enable = true;
 
-  programs.texlive.extraPackages = tpkgs: {
+  programs.texlive.extraPackages = "tpkgs: {
     inherit (tpkgs) collection-full;
-  };
+  }";
 }
 
