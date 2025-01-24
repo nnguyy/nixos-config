@@ -16,7 +16,7 @@
     spotify
     neofetch
 
-    texlive.combinded.scheme-basic
+    texlive.combined.scheme-basic
 
     grim
     pavucontrol
