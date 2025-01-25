@@ -19,5 +19,6 @@
     ./fd.nix
     ./pandoc.nix
     ./zathura.nix
+    ./direnv.nix
   ];
 }
