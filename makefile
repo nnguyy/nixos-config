@@ -1,5 +1,5 @@
 # TODO:	change this location if not in ~ dir
-FLAKE_PATH = ~/old-config
+FLAKE_PATH = ~/nixos-config
 
 # default target 
 # TODO: change this to whatever host
