@@ -20,5 +20,6 @@
     ./pandoc.nix
     ./zathura.nix
     ./direnv.nix
+    ./neovim/neovim.nix
   ];
 }
