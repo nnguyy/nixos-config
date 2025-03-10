@@ -12,13 +12,9 @@
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nvf = {
-      url = "github:notashelf/nvf";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
   };
 
-  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, nvf, ... }@inputs:
+  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, ... }@inputs:
 
   let
     # Define configurations for each system
@@ -38,7 +34,7 @@
         ./hosts/${name}/configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
-        inputs.nvf.nixosModules.default
+        #inputs.nvf.nixosModules.default
       ];
     };
 

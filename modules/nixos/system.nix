@@ -8,16 +8,20 @@
   boot.loader.grub.devices = [ "nodev" ];
   boot.loader.grub.efiSupport = true;
   boot.loader.grub.useOSProber = true;
+
   # Hardware
   hardware = {
-    nvidia = {
-      modesetting.enable = true;
-      open = true;
+    graphics = {
+      enable = true; 
+      extraPackages = [
+        pkgs.amdvlk
+      ];
     };
-    graphics.enable = true;
     bluetooth.enable = true;
   };
-  services.xserver.videoDrivers = [ "nvidia" ];
+  services.xserver.videoDrivers = [ "amdgpu" ];
+
+  environment.variables.AMD_VULKAN_ICD = "RADV";
 
   # Security
   nixpkgs.config.allowUnfree = true;
