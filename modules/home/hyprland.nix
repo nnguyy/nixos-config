@@ -108,8 +108,8 @@
       "$mainMod" = "SUPER";
 
       bindm = [
-        "CTL, mouse:272, movewindow"
-        "CTL, mouse:273, resizewindow"
+        "Control_L, mouse:272, movewindow"
+        "Control_L, mouse:273, resizewindow"
       ];
 
       bind = [
