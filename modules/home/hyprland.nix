@@ -108,8 +108,8 @@
       "$mainMod" = "SUPER";
 
       bindm = [
-        "$mainMod, mouse:272, movewindow"
-       "$mainMod, mouse:273, resizewindow"
+        "CTL, mouse:272, movewindow"
+        "CTL, mouse:273, resizewindow"
       ];
 
       bind = [
@@ -175,7 +175,7 @@
       windowrule = [
         "opacity 0.9 0.8, ^(kitty)$"
       ];
-
+3232
       windowrulev2 = [
         "suppressevent maximize, class:.*"
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
