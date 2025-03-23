@@ -18,7 +18,7 @@
     live-server
     cmake
     libtool
-    python
+    python3
     rocmPackages.clr
     rocmPackages.rocminfo
     rocmPackages.rocm-smi
