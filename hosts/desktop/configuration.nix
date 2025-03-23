@@ -18,6 +18,11 @@
     live-server
     cmake
     libtool
+    python
+    rocmPackages.clr
+    rocmPackages.rocminfo
+    rocmPackages.rocm-smi
+    pytorch
   ];
 
   system.stateVersion = "24.11"; # Did you read the comment?
