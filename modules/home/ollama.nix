@@ -1,7 +1,7 @@
 { config, lib, pkgs, ... }:
 
 {
-  services.ollama {
+  services.ollama = {
     enable = true;
   }
 }
