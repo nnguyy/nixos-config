@@ -21,5 +21,6 @@
     ./zathura.nix
     ./direnv.nix
     ./neovim/neovim.nix
+    ./ollama.nix
   ];
 }
