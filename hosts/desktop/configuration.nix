@@ -18,11 +18,9 @@
     live-server
     cmake
     libtool
-    python3
-    rocmPackages.clr
-    rocmPackages.rocminfo
-    rocmPackages.rocm-smi
   ];
+
+  nixpkgs.config.rocmSupport = true;
 
   system.stateVersion = "24.11"; # Did you read the comment?
 }
