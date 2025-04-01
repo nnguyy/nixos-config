@@ -18,6 +18,7 @@
     live-server
     cmake
     libtool
+    plover.dev
   ];
 
   nixpkgs.config.rocmSupport = true;
