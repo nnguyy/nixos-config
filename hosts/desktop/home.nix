@@ -25,6 +25,7 @@
     swww
     dunst
     inputs.hyprland-qtutils.packages."${pkgs.system}".default
+    docker
   ];
 
   nixpkgs.config.allowUnfree = true;
