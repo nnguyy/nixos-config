@@ -18,6 +18,7 @@
     live-server
     cmake
     libtool
+    docker
   ];
   virtualisation.docker.enable = true;
   users.extraGroups = {
