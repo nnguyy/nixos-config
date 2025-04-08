@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
+    nixos-wsl.url = "github:nix-community/NixOS-WSL";
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -14,13 +15,14 @@
     };
   };
 
-  outputs = { self, nixpkgs, hyprland-qtutils, home-manager, stylix, ... }@inputs:
+  outputs = { self, nixpkgs, hyprland-qtutils, nixos-wsl, home-manager, stylix, ... }@inputs:
 
   let
     # Define configurations for each system
     systems = {
       desktop = { userName = "nnguy"; hostName = "desktop"; };
       laptop = { userName = "nnguy"; hostName = "laptop"; };
+      wsl = { userName = "nixos"; hostName = "wsl"; };
     };
 
     # Function to create a nixosSystem configuration
@@ -34,28 +36,19 @@
         ./hosts/${name}/configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.stylix.nixosModules.stylix
-        #inputs.nvf.nixosModules.default
-      ];
-    };
-
-    mkHome = config: home-manager.lib.homeManagerConfiguration {
-      inherit (inputs.nixpkgs) pkgs;
-      modules = [
-        ./hosts/${config.hostName}/home.nix
-        #inputs.nvf.homeManagerModules.default
+        (if name == "wsl" then inputs.nixos-wsl.nixosModules.wsl else { })
+        {
+          home-manager.useUserPackages = true;
+          home-manager.users.${config.userName} = import ./hosts/${name}/home.nix;
+        }
       ];
     };
   in
   {
     nixosConfigurations = {
-      # Create configurations for each system
       desktop = mkSystem "desktop" systems.desktop;
       laptop = mkSystem "laptop" systems.laptop;
-    };
-
-    homeConfigurations = {
-      "${systems.desktop.userName}@${systems.desktop.hostName}" = mkHome systems.desktop;
-      "${systems.laptop.userName}@${systems.laptop.hostName}" = mkHome systems.laptop;
+      wsl = mkSystem "wsl" systems.wsl;
     };
   };
 }
