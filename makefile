@@ -11,5 +11,8 @@ desktop:
 laptop:
 	sudo nixos-rebuild switch --flake ${FLAKE_PATH}#laptop
 
+wsl:
+	sudo nixos-rebuild switch --flake ${FLAKE_PATH}#wsl
+
 clean:
 	nix-collect-garbage -d
