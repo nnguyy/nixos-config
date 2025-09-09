@@ -172,7 +172,6 @@
       ];
 
       windowrule = [
-        "opacity 0.9 0.8, ^(kitty)$"
       ];
       windowrulev2 = [
         "suppressevent maximize, class:.*"
